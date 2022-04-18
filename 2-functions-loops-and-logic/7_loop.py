@@ -14,7 +14,10 @@ print('\n RANGE \n')
 ls = list(range(3))
 print(ls)  # [0,1,2]
 
-# but we need to assign it to the list, else we will get the range function:
+# but we need to assign it to the list, else we will get the generator:
+# Generator is like an object that we can iterate over. Generator only knows where
+# it is not and how to get the next value on demand, without generated the whole list
+# all at once.
 print(range(3))
 
 # range ccn take starting point and ending point
